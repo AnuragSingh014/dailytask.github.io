@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+
+<body>
+    <!-- navigation button-->
+    <nav class="navigation">
+        <ul>
+           <li>Welcome to your daily scheduler</li>
+        </ul>
+    </nav>
+    
+    <div class="header">Task List</div>
+    
+
+    <!-- input box -->
+    <div class="form">
+        <div>
+            <p>Task</p>
+            <textarea cols="100" id="title"></textarea>
+        </div>
+        <div>
+            <p>description</p>
+            <textarea cols="100" rows="10" id="description"></textarea>
+        </div>
+            <button type="submit" class="button" id="add">add to list</button>
+            <button id="clear" class="button" onclick="clearStorage()">Clear list</button>
+    </div>
+    
+    
+    <!-- daily task table-->
+    <div id="items">
+        <h2>Your Tasks For Today</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th scope="col">Priority Number</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Task Description</th>
+                    <th scope="col">Remove Task</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td><button class="button">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <footer>
+            Copyright&copy; 2022
+        </footer>
+    </div>
+        
+</body>
+
+<script src="index.js"></script>
+
+</html>
